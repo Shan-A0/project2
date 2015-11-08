@@ -223,3 +223,5 @@ function swap (pos) {
 	div[pos].style.left = spacea;
 	spacea = temp;
 }
+pic = "url('http://www.vector-eps.com/wp-content/gallery/classic-cartoon-characters/classic-cartoon-vector19.jpg')";
+puzzlearea.style.backgroundImage = pic;
