@@ -42,6 +42,8 @@ window.onload = function ()
 			}
 		};
 	}
+	
+	/*backimg=document.getElementId('puzzlearea').style.backgroundImage="url('http://www.vector-eps.com/wp-content/gallery/classic-cartoon-characters/classic-cartoon-vector19.jpg')";*/
 
 	spacea = '300px';
 	spaceb = '300px';
@@ -224,4 +226,3 @@ function swap (pos) {
 	spacea = temp;
 }
 
-/*backimg=document.getElementId('puzzlearea').style.backgroundImage="url('http://www.vector-eps.com/wp-content/gallery/classic-cartoon-characters/classic-cartoon-vector19.jpg')";*/
