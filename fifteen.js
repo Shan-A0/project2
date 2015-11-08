@@ -7,6 +7,8 @@ window.onload = function ()
 {
 	var puzzlearea = document.getElementById('puzzlearea');
 	
+	/*backimg=document.getElementId('puzzlearea').style.backgroundImage="url('http://www.vector-eps.com/wp-content/gallery/classic-cartoon-characters/classic-cartoon-vector19.jpg')";*/
+
 	div = puzzlearea.getElementsByTagName('div');
 
 	for (var n=0; n<div.length; n++)
@@ -43,8 +45,6 @@ window.onload = function ()
 		};
 	}
 	
-	/*backimg=document.getElementId('puzzlearea').style.backgroundImage="url('http://www.vector-eps.com/wp-content/gallery/classic-cartoon-characters/classic-cartoon-vector19.jpg')";*/
-
 	spacea = '300px';
 	spaceb = '300px';
 
