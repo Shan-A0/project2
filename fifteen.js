@@ -9,13 +9,13 @@ window.onload = function ()
 	
 	div = puzzlearea.getElementsByTagName('div');
 
-	for (var i=0; i<div.length; i++)
+	for (var n=0; n<div.length; n++)
 	{
-		div[i].className = 'puzzlepiece';
-		div[i].style.left = (i%4*100)+'px';
-		div[i].style.top = (parseInt(i/4)*100) + 'px';
-		div[i].style.backgroundPosition= '-' + div[i].style.left + ' ' + '-' + div[i].style.top;
-		div[i].onmouseover = function()
+		div[n].className = 'puzzlepiece';
+		div[n].style.left = (n%4*100)+'px';
+		div[n].style.top = (parseInt(n/4)*100) + 'px';
+		div[n].style.backgroundPosition= '-' + div[n].style.left + ' ' + '-' + div[n].style.top;
+		div[n].onmouseover = function()
 		{
 			if (checkCanMove(parseInt(this.innerHTML)))
 			{
@@ -23,13 +23,13 @@ window.onload = function ()
 				this.style.color = "#006600";
 			}
 		};
-		div[i].onmouseout = function()
+		div[n].onmouseout = function()
 		{
 			this.style.border = "2px solid black";
 			this.style.color = "#000000";
 		};
 
-		div[i].onclick = function()
+		div[n].onclick = function()
 		{
 			if (checkCanMove(parseInt(this.innerHTML)))
 			{
@@ -47,7 +47,7 @@ window.onload = function ()
 	spaceb = '300px';
 
 	var shufflebutton = document.getElementById('shufflebutton');
-	shufflebutton.onclick = function()
+	shufflebutton.onclick = function() //shuffles the puzzle when clicked
 	{
 
 		for (var i=0; i<250; i++)
@@ -91,7 +91,7 @@ window.onload = function ()
 	};
 };
 
-function checkCanMove(pos)
+function checkCanMove(pos) //checks if there is any posible moves
 {
 	if (calcLeft(spacea, spaceb) == (pos-1))
 	{
@@ -115,7 +115,7 @@ function checkCanMove(pos)
 }
 
 
-function youWin()
+function youWin() //Tells the player when they have won
 {
 	alert('Y O U  W O N !');
 }
@@ -223,5 +223,5 @@ function swap (pos) {
 	div[pos].style.left = spacea;
 	spacea = temp;
 }
-pic = "url('http://www.vector-eps.com/wp-content/gallery/classic-cartoon-characters/classic-cartoon-vector19.jpg')";
-puzzlearea.style.backgroundImage = pic;
+
+/*backimg=document.getElementId('puzzlearea').style.backgroundImage="url('http://www.vector-eps.com/wp-content/gallery/classic-cartoon-characters/classic-cartoon-vector19.jpg')";*/
